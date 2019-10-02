@@ -1,3 +1,6 @@
+const BigNumber=require('bignumber.js');
 module.exports = function multiply(first, second) {
-  // your solution
+	firstBig = new BigNumber(first);
+	secondBig = new BigNumber(second);
+  return firstBig.multipliedBy(secondBig).toFixed();
 }
